@@ -1,0 +1,19 @@
+#Lista de numeros
+a = [1,2,3,4,5,6,7]
+print(a)
+
+#Lista de cadenas
+b = ["Namjoon", "Seokjin", "Jimin", "Yoongi", "Taehyung", "Jungkook"]
+print(b) 
+
+a.append(8)
+print(a)
+
+b.append("Hoseok") #Agrega un elemento al final de la lista
+print(b)
+
+a.pop() #Elimina el último elemento de la lista
+print(a)
+
+for item in b:
+    print(item) #Imprime cada elemento de la lista b    

@@ -1,0 +1,12 @@
+L = 'BTS'
+print(L)
+
+E = 'Estrella'
+print(E)
+
+O = """Nuestro sistema solar tiene 8 planetas: Mercurio, Venus, Tierra, Marte, 
+Júpiter, Saturno, Urano y Neptuno."""
+print(O)
+T = '''Nuestro planeta Tierra es el tercer planeta del sistema solar
+y el único que alberga vida.'''
+print(T)

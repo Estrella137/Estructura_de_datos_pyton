@@ -1,0 +1,25 @@
+
+#Constructor para iniciar 
+class Node:
+    def __init__(self, new_data):
+        self.data = new_data
+        self.next = None
+        
+        #Creacion del nodo cabeza
+        Head = Node(10)
+        
+        #Enlazar el segundo nodo
+        Head.next = Node(20)
+        
+        #Enlaza el tercer nodo
+        Head.next.next = Node(30)
+        
+        Head.next.next.next = Node(40)
+        
+        Head.next.next.next.next = Node(50)
+        
+        #Imprimir la lista enlazada
+        Moon = Head
+        while Moon is not None:
+            print(Moon.data, end=" ")
+            Moon = Moon.next

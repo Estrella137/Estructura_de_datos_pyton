@@ -1,0 +1,40 @@
+class Node:
+    def __init__(self, x):
+        self.data = x
+        self.left = None
+        self.right = None
+
+# Funcion recursiva para encontrar el tamaÃ±o de un Ã¡rbol binario
+
+def getSize(root):
+    if root is None:
+        return 0
+
+    # Encuentra el tamaño de los subárboles izquierdo y derecho.
+    left = getSize(root.left)
+    right = getSize(root.right)
+
+    # Devuelve el tamaño del subárbol actual.
+    return left + right + 1
+
+
+if __name__ == "__main__":
+
+    #  El arbol binario construido es:
+    #          7
+    #         / \
+    #        1   10
+    #       /   / \
+    #      3   6   8
+    
+    root = Node(7)
+    root.left = Node(1)
+    root.right = Node(10)
+
+    root.left.left = Node(3)
+
+    root.right.left = Node(6)
+    root.right.right = Node(8)
+
+    print(getSize(root))
+

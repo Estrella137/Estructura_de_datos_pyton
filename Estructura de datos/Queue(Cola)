@@ -1,0 +1,18 @@
+from queue import Queue
+q = Queue(maxsize=3)
+print("Tamaño inicial:", q.qsize())
+
+q.put('Luna')
+q.put('Estrella')
+q.put('Sol')
+print("Esta lleno:", q.full())
+
+print("Elementos extraidos de la cola:")
+print(q.get())
+print(q.get())
+print(q.get())
+print("Esta vacio:", q.empty())
+
+q.put(1)
+print("Esta vacio:", q.empty())
+print("Esta lleno:", q.full())

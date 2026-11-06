@@ -1,0 +1,16 @@
+def factorial_iterativo(n):
+    
+    #iniciar el resultado en 1 
+    resultado = 1 
+    
+    #Multiplacar consecutivamente desde 1 hasta n 
+    #range(1, n +1) genera numeros desde 1 hasta n 
+    for i in range(1, n + 1):
+        resultado = resultado * i 
+        
+        #devolver el resultado final
+    return resultado
+
+numero = 7
+print(f"El factorial iterativo de {numero} es: {factorial_iterativo(numero)}")
+    

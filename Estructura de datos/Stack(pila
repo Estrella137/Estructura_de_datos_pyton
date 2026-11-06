@@ -1,0 +1,10 @@
+#Se afregan elementos a la pila usando append() y se eliminan usando pop()
+stack = []
+stack.append('Limon')
+stack.append('Fresa')
+stack.append('Naranja')
+stack.append('Uva Verde')
+
+print(stack)
+print(stack.pop())
+print(stack.pop())

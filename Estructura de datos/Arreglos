@@ -1,0 +1,11 @@
+#Creando un arreglo de 7 elementos fijos
+arr = [0] * 7
+
+#Almacenando valores en el arreglo
+for i in range(7):
+    arr[i] = i + 1  
+    print("Los elementos del arreglo son: ", arr[i])
+    
+    arr.append(8) #Agrega un elemento al final del arreglo
+    print(arr)
+    
